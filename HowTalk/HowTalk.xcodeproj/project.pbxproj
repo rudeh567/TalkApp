@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38CF8CE6F26E0EC91074FC15 /* Pods_HowTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8ADE31A6567CE207687B12 /* Pods_HowTalk.framework */; };
 		A84CE189269DA22E000F943A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE188269DA22E000F943A /* AppDelegate.swift */; };
 		A84CE18B269DA22E000F943A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE18A269DA22E000F943A /* SceneDelegate.swift */; };
 		A84CE18D269DA22E000F943A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE18C269DA22E000F943A /* ViewController.swift */; };
 		A84CE190269DA22E000F943A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84CE18E269DA22E000F943A /* Main.storyboard */; };
 		A84CE192269DA232000F943A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84CE191269DA232000F943A /* Assets.xcassets */; };
 		A84CE195269DA232000F943A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84CE193269DA232000F943A /* LaunchScreen.storyboard */; };
+		A84CE19D269E6359000F943A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE19C269E6359000F943A /* GoogleService-Info.plist */; };
+		A84CE19F269E750A000F943A /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE19E269E750A000F943A /* RemoteConfigDefaults.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		A84CE191269DA232000F943A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84CE194269DA232000F943A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A84CE196269DA232000F943A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84CE19C269E6359000F943A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A84CE19E269E750A000F943A /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		B1B3D53E7D54D0DCE0B15FC4 /* Pods-HowTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.debug.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		BA8ADE31A6567CE207687B12 /* Pods_HowTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38951BC3199EA60776AAAD /* Pods-HowTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.release.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CF8CE6F26E0EC91074FC15 /* Pods_HowTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18F8F4C9D57BD0A31B1D6F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA8ADE31A6567CE207687B12 /* Pods_HowTalk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A84CE17C269DA22E000F943A = {
 			isa = PBXGroup;
 			children = (
 				A84CE187269DA22E000F943A /* HowTalk */,
 				A84CE186269DA22E000F943A /* Products */,
+				D49D20EFADC4EC1649F3F5A5 /* Pods */,
+				18F8F4C9D57BD0A31B1D6F5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +78,23 @@
 				A84CE188269DA22E000F943A /* AppDelegate.swift */,
 				A84CE18A269DA22E000F943A /* SceneDelegate.swift */,
 				A84CE18C269DA22E000F943A /* ViewController.swift */,
+				A84CE19E269E750A000F943A /* RemoteConfigDefaults.plist */,
 				A84CE18E269DA22E000F943A /* Main.storyboard */,
 				A84CE191269DA232000F943A /* Assets.xcassets */,
 				A84CE193269DA232000F943A /* LaunchScreen.storyboard */,
+				A84CE19C269E6359000F943A /* GoogleService-Info.plist */,
 				A84CE196269DA232000F943A /* Info.plist */,
 			);
 			path = HowTalk;
+			sourceTree = "<group>";
+		};
+		D49D20EFADC4EC1649F3F5A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B3D53E7D54D0DCE0B15FC4 /* Pods-HowTalk.debug.xcconfig */,
+				DB38951BC3199EA60776AAAD /* Pods-HowTalk.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A84CE199269DA232000F943A /* Build configuration list for PBXNativeTarget "HowTalk" */;
 			buildPhases = (
+				1EBF0596ED92EC65E6970E00 /* [CP] Check Pods Manifest.lock */,
 				A84CE181269DA22E000F943A /* Sources */,
 				A84CE182269DA22E000F943A /* Frameworks */,
 				A84CE183269DA22E000F943A /* Resources */,
+				19A99D08CE1B8BD650174D70 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +157,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84CE195269DA232000F943A /* LaunchScreen.storyboard in Resources */,
+				A84CE19F269E750A000F943A /* RemoteConfigDefaults.plist in Resources */,
+				A84CE19D269E6359000F943A /* GoogleService-Info.plist in Resources */,
 				A84CE192269DA232000F943A /* Assets.xcassets in Resources */,
 				A84CE190269DA22E000F943A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19A99D08CE1B8BD650174D70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowTalk/Pods-HowTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowTalk/Pods-HowTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HowTalk/Pods-HowTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EBF0596ED92EC65E6970E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A84CE181269DA22E000F943A /* Sources */ = {
@@ -283,6 +359,7 @@
 		};
 		A84CE19A269DA232000F943A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B3D53E7D54D0DCE0B15FC4 /* Pods-HowTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		A84CE19B269DA232000F943A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB38951BC3199EA60776AAAD /* Pods-HowTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -7,4 +7,10 @@ target 'HowTalk' do
 
   # Pods for HowTalk
 
+
+pod 'SnapKit', '~> 5.0.0'
+pod 'Firebase/Analytics'
+pod 'Firebase/RemoteConfig'
+
+
 end
