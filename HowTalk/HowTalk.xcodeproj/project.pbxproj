@@ -16,6 +16,8 @@
 		A84CE195269DA232000F943A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84CE193269DA232000F943A /* LaunchScreen.storyboard */; };
 		A84CE19D269E6359000F943A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE19C269E6359000F943A /* GoogleService-Info.plist */; };
 		A84CE19F269E750A000F943A /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE19E269E750A000F943A /* RemoteConfigDefaults.plist */; };
+		A84CE1A1269E83B6000F943A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1A0269E83B6000F943A /* LoginViewController.swift */; };
+		A84CE1A3269EA353000F943A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1A2269EA353000F943A /* SignupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A84CE196269DA232000F943A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A84CE19C269E6359000F943A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A84CE19E269E750A000F943A /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		A84CE1A0269E83B6000F943A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A84CE1A2269EA353000F943A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		B1B3D53E7D54D0DCE0B15FC4 /* Pods-HowTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.debug.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		BA8ADE31A6567CE207687B12 /* Pods_HowTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB38951BC3199EA60776AAAD /* Pods-HowTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.release.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				A84CE193269DA232000F943A /* LaunchScreen.storyboard */,
 				A84CE19C269E6359000F943A /* GoogleService-Info.plist */,
 				A84CE196269DA232000F943A /* Info.plist */,
+				A84CE1A0269E83B6000F943A /* LoginViewController.swift */,
+				A84CE1A2269EA353000F943A /* SignupViewController.swift */,
 			);
 			path = HowTalk;
 			sourceTree = "<group>";
@@ -213,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84CE1A1269E83B6000F943A /* LoginViewController.swift in Sources */,
 				A84CE18D269DA22E000F943A /* ViewController.swift in Sources */,
+				A84CE1A3269EA353000F943A /* SignupViewController.swift in Sources */,
 				A84CE189269DA22E000F943A /* AppDelegate.swift in Sources */,
 				A84CE18B269DA22E000F943A /* SceneDelegate.swift in Sources */,
 			);
