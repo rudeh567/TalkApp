@@ -1,0 +1,6 @@
+framework module Pods_HowITalk {
+  umbrella header "Pods-HowITalk-umbrella.h"
+
+  export *
+  module * { export * }
+}
