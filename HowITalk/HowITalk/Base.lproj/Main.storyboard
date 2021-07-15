@@ -23,10 +23,121 @@
             </objects>
             <point key="canvasLocation" x="139" y="131"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="qV0-Tk-4en">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="dsb-kn-Dov" customClass="LoginViewController" customModule="HowITalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OAo-1H-mlm">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_icon" translatesAutoresizingMaskIntoConstraints="NO" id="FVW-zO-lfy">
+                                <rect key="frame" x="145" y="184" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Jbn-pG-zfr"/>
+                                    <constraint firstAttribute="width" constant="100" id="jnr-O7-jyf"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ygf-th-KR3" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="313" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h66-gk-uz0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" systemColor="systemGray4Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCC-7J-bz1" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                <rect key="frame" x="20" y="361" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="agG-Sa-1eb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" systemColor="systemRedColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" systemColor="systemGray4Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-Z2-NIv">
+                                <rect key="frame" x="20" y="426" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nph-Yx-hDb"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8x-IQ-haW">
+                                <rect key="frame" x="20" y="474" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FIg-n2-fT7"/>
+                                </constraints>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0xA-fx-8jV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FVW-zO-lfy" firstAttribute="centerX" secondItem="OAo-1H-mlm" secondAttribute="centerX" id="3Ng-aR-ZgY"/>
+                            <constraint firstItem="DCC-7J-bz1" firstAttribute="leading" secondItem="0xA-fx-8jV" secondAttribute="leading" constant="20" id="6Ui-4T-Wq5"/>
+                            <constraint firstItem="FVW-zO-lfy" firstAttribute="top" secondItem="0xA-fx-8jV" secondAttribute="top" constant="140" id="7MU-nz-gs4"/>
+                            <constraint firstItem="DCC-7J-bz1" firstAttribute="top" secondItem="Ygf-th-KR3" secondAttribute="bottom" constant="8" symbolic="YES" id="8M7-Lw-gna"/>
+                            <constraint firstItem="WRk-Z2-NIv" firstAttribute="leading" secondItem="0xA-fx-8jV" secondAttribute="leading" constant="20" id="HYt-AM-7WC"/>
+                            <constraint firstItem="Ygf-th-KR3" firstAttribute="leading" secondItem="0xA-fx-8jV" secondAttribute="leading" constant="20" id="HgF-TN-OwH"/>
+                            <constraint firstItem="0xA-fx-8jV" firstAttribute="trailing" secondItem="Ygf-th-KR3" secondAttribute="trailing" constant="20" id="OD4-15-FwB"/>
+                            <constraint firstItem="o8x-IQ-haW" firstAttribute="top" secondItem="WRk-Z2-NIv" secondAttribute="bottom" constant="8" symbolic="YES" id="WrT-oB-AxF"/>
+                            <constraint firstItem="o8x-IQ-haW" firstAttribute="leading" secondItem="0xA-fx-8jV" secondAttribute="leading" constant="20" id="XOc-8t-1ar"/>
+                            <constraint firstItem="0xA-fx-8jV" firstAttribute="trailing" secondItem="WRk-Z2-NIv" secondAttribute="trailing" constant="20" id="cpY-C7-1Px"/>
+                            <constraint firstItem="0xA-fx-8jV" firstAttribute="trailing" secondItem="o8x-IQ-haW" secondAttribute="trailing" constant="20" id="hPH-uf-276"/>
+                            <constraint firstItem="0xA-fx-8jV" firstAttribute="trailing" secondItem="DCC-7J-bz1" secondAttribute="trailing" constant="20" id="jfM-yt-V6Z"/>
+                            <constraint firstItem="WRk-Z2-NIv" firstAttribute="top" secondItem="DCC-7J-bz1" secondAttribute="bottom" constant="25" id="qWR-Zb-fe6"/>
+                            <constraint firstItem="Ygf-th-KR3" firstAttribute="top" secondItem="FVW-zO-lfy" secondAttribute="bottom" constant="29" id="uTG-fb-T3T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="WRk-Z2-NIv" id="Rqx-2n-LmM"/>
+                        <outlet property="signIn" destination="o8x-IQ-haW" id="BV5-0h-O6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdb-PD-owp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="130.80568720379145"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="DCC-7J-bz1">
+            <size key="intrinsicContentSize" width="98.666666666666671" height="31"/>
+        </designable>
+    </designables>
     <resources>
+        <image name="loading_icon" width="128" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
