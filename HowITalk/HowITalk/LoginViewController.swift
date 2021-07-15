@@ -10,12 +10,13 @@ import Firebase
 
 class LoginViewController: UIViewController {
     @IBOutlet var loginButton: UIButton!
-    @IBOutlet var signIn: UIButton!
+    @IBOutlet var signup: UIButton!
     let remoteconfig = RemoteConfig.remoteConfig()
     var color : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let statusBar = UIView()
         self.view.addSubview(statusBar)
         statusBar.snp.makeConstraints { (m) in
@@ -28,10 +29,17 @@ class LoginViewController: UIViewController {
         
         statusBar.backgroundColor = UIColor(hex: color)
         loginButton.backgroundColor = UIColor(hex: color)
-        signIn.backgroundColor = UIColor(hex: color)
+        signup.backgroundColor = UIColor(hex: color)
+        
+        signup.addTarget(self, action: #selector(presentSingup), for: .touchUpInside)
         // Do any additional setup after loading the view.
     }
     
+    @objc func presentSingup() {
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "SignupViewController") as! SignupViewController
+        
+        self.present(view, animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

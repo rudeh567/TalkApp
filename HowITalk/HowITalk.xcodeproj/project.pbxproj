@@ -16,6 +16,7 @@
 		A84CE1C7269F0261000F943A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE1C6269F0261000F943A /* GoogleService-Info.plist */; };
 		A84CE1CD269F0489000F943A /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84CE1CC269F0489000F943A /* RemoteConfigDefaults.plist */; };
 		A84CE1CF269F081B000F943A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1CE269F081B000F943A /* LoginViewController.swift */; };
+		A84CE1D1269FB837000F943A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1D0269FB837000F943A /* SignupViewController.swift */; };
 		C9A5BD5BCA852E70AA2B3EE8 /* Pods_HowITalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080E0586E6E05F52ACEFD8BA /* Pods_HowITalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		A84CE1C6269F0261000F943A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A84CE1CC269F0489000F943A /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
 		A84CE1CE269F081B000F943A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A84CE1D0269FB837000F943A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				A84CE1BE269EFCE0000F943A /* Info.plist */,
 				A84CE1C6269F0261000F943A /* GoogleService-Info.plist */,
 				A84CE1CE269F081B000F943A /* LoginViewController.swift */,
+				A84CE1D0269FB837000F943A /* SignupViewController.swift */,
 			);
 			path = HowITalk;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				A84CE1CF269F081B000F943A /* LoginViewController.swift in Sources */,
 				A84CE1B5269EFCDD000F943A /* ViewController.swift in Sources */,
+				A84CE1D1269FB837000F943A /* SignupViewController.swift in Sources */,
 				A84CE1B1269EFCDD000F943A /* AppDelegate.swift in Sources */,
 				A84CE1B3269EFCDD000F943A /* SceneDelegate.swift in Sources */,
 			);
