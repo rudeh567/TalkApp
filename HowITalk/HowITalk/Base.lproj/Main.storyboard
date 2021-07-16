@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="height" constant="40" id="agG-Sa-1eb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" systemColor="systemRedColor"/>
@@ -165,7 +165,7 @@
                                     <constraint firstAttribute="height" constant="40" id="o0k-uD-kto"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
                                         <color key="value" systemColor="systemRedColor"/>
@@ -236,16 +236,31 @@
             </objects>
             <point key="canvasLocation" x="2080" y="130.80568720379145"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="BCo-Il-OKL">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="ZRh-VW-wW8" customClass="MainViewController" customModule="HowITalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HVb-Y9-Ude">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7uL-UC-uhp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1BE-cV-ZWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2992" y="140"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="DCC-7J-bz1">
-            <size key="intrinsicContentSize" width="112.66666666666667" height="36"/>
+            <size key="intrinsicContentSize" width="112.66666666666667" height="34"/>
         </designable>
         <designable name="PkT-1F-0O1">
             <size key="intrinsicContentSize" width="62.666666666666664" height="28.666666666666668"/>
         </designable>
         <designable name="Pm7-fm-sCX">
-            <size key="intrinsicContentSize" width="90.333333333333329" height="28.666666666666668"/>
+            <size key="intrinsicContentSize" width="90.333333333333329" height="27"/>
         </designable>
         <designable name="Ygf-th-KR3">
             <size key="intrinsicContentSize" width="75" height="36"/>
