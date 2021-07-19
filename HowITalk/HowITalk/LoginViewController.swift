@@ -9,14 +9,19 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet var password: UITextField!
+    @IBOutlet var email: UITextField!
     @IBOutlet var loginButton: UIButton!
     @IBOutlet var signup: UIButton!
+    
     let remoteconfig = RemoteConfig.remoteConfig()
     var color : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        try! Auth.auth().signOut()
         let statusBar = UIView()
         self.view.addSubview(statusBar)
         statusBar.snp.makeConstraints { (m) in
@@ -31,8 +36,29 @@ class LoginViewController: UIViewController {
         loginButton.backgroundColor = UIColor(hex: color)
         signup.backgroundColor = UIColor(hex: color)
         
+        loginButton.addTarget(self, action: #selector(loginEvent), for: .touchUpInside)
+        
         signup.addTarget(self, action: #selector(presentSingup), for: .touchUpInside)
+        
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if user != nil {
+                let view = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+                self.present(view, animated: true, completion: nil)
+            }
+        }
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func loginEvent() {
+        
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, err) in
+            
+            if err != nil {
+                let alert = UIAlertController(title: "에러", message: err.debugDescription, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
     }
     
     @objc func presentSingup() {

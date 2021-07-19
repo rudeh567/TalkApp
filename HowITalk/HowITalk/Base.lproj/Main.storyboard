@@ -111,7 +111,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="email" destination="Ygf-th-KR3" id="ABp-Fe-ils"/>
                         <outlet property="loginButton" destination="WRk-Z2-NIv" id="Rqx-2n-LmM"/>
+                        <outlet property="password" destination="DCC-7J-bz1" id="MIJ-Jf-TkT"/>
                         <outlet property="signup" destination="o8x-IQ-haW" id="qsT-hI-M5O"/>
                     </connections>
                 </viewController>
