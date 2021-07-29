@@ -241,7 +241,7 @@
         <!--people-->
         <scene sceneID="BCo-Il-OKL">
             <objects>
-                <viewController storyboardIdentifier="PeopleViewController" id="ZRh-VW-wW8" customClass="PeopleViewController" customModule="HowITalk" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="ZRh-VW-wW8" customClass="PeopleViewController" customModule="HowITalk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HVb-Y9-Ude">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
