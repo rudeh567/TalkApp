@@ -252,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1BE-cV-ZWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3920" y="139.33649289099526"/>
+            <point key="canvasLocation" x="3997" y="139"/>
         </scene>
         <!--chat-->
         <scene sceneID="Wim-UM-O2p">
