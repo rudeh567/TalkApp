@@ -18,7 +18,7 @@
 		A84CE1CF269F081B000F943A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1CE269F081B000F943A /* LoginViewController.swift */; };
 		A84CE1D1269FB837000F943A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1D0269FB837000F943A /* SignupViewController.swift */; };
 		A84CE1D326A01395000F943A /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1D226A01395000F943A /* PeopleViewController.swift */; };
-		A84CE1D526AEB714000F943A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1D426AEB714000F943A /* UserModel.swift */; };
+		A84CE1D726C3D0E1000F943A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CE1D626C3D0E1000F943A /* UserModel.swift */; };
 		C9A5BD5BCA852E70AA2B3EE8 /* Pods_HowITalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 080E0586E6E05F52ACEFD8BA /* Pods_HowITalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +39,7 @@
 		A84CE1CE269F081B000F943A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A84CE1D0269FB837000F943A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		A84CE1D226A01395000F943A /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
-		A84CE1D426AEB714000F943A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		A84CE1D626C3D0E1000F943A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,7 @@
 		A84CE1AF269EFCDD000F943A /* HowITalk */ = {
 			isa = PBXGroup;
 			children = (
+				A84CE1D626C3D0E1000F943A /* UserModel.swift */,
 				A84CE1B0269EFCDD000F943A /* AppDelegate.swift */,
 				A84CE1B2269EFCDD000F943A /* SceneDelegate.swift */,
 				A84CE1B4269EFCDD000F943A /* ViewController.swift */,
@@ -104,7 +105,6 @@
 				A84CE1CE269F081B000F943A /* LoginViewController.swift */,
 				A84CE1D0269FB837000F943A /* SignupViewController.swift */,
 				A84CE1D226A01395000F943A /* PeopleViewController.swift */,
-				A84CE1D426AEB714000F943A /* UserModel.swift */,
 			);
 			path = HowITalk;
 			sourceTree = "<group>";
@@ -226,7 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84CE1CF269F081B000F943A /* LoginViewController.swift in Sources */,
-				A84CE1D526AEB714000F943A /* UserModel.swift in Sources */,
+				A84CE1D726C3D0E1000F943A /* UserModel.swift in Sources */,
 				A84CE1B5269EFCDD000F943A /* ViewController.swift in Sources */,
 				A84CE1D1269FB837000F943A /* SignupViewController.swift in Sources */,
 				A84CE1D326A01395000F943A /* PeopleViewController.swift in Sources */,
