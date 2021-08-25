@@ -257,7 +257,7 @@
         <!--chat-->
         <scene sceneID="Wim-UM-O2p">
             <objects>
-                <viewController storyboardIdentifier="ChatViewController" id="nnL-ck-zjZ" customClass="ChatViewController" customModule="HowITalk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nnL-ck-zjZ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ngu-0s-iFg">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

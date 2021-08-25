@@ -9,7 +9,7 @@ import UIKit
 
 class UserModel: NSObject {
     
-    var profileImageUrl :String?
-    var userName :String?
-    var uid : String?
+    @objc var profileImageUrl :String?
+    @objc var userName :String?
+
 }
