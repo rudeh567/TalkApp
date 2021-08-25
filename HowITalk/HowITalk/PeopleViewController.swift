@@ -60,7 +60,7 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.addSubview(imageView)
         imageView.snp.makeConstraints { (m) in
             m.centerY.equalTo(cell)
-            m.left.equalTo(cell)
+            m.left.equalTo(10)
             m.height.width.equalTo(50)
         }
         
@@ -79,7 +79,7 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.addSubview(label)
         label.snp.makeConstraints { (m) in
             m.centerY.equalTo(cell)
-            m.left.equalTo(imageView.snp.right).offset(30)
+            m.left.equalTo(imageView.snp.right).offset(20)
         }
         
         label.text = array[indexPath.row].userName
@@ -88,7 +88,7 @@ class PeopleViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 70
     }
     
     /*

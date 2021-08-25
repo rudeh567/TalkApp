@@ -43,7 +43,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="h66-gk-uz0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -249,6 +249,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="people" image="baseline_people_black_12pt_1x" selectedImage="baseline_people_black_12pt_1x" id="Le0-Sf-0xX"/>
+                    <connections>
+                        <outlet property="view" destination="HVb-Y9-Ude" id="RGx-Ko-Dvs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1BE-cV-ZWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,7 +321,7 @@
             <size key="intrinsicContentSize" width="90.333333333333329" height="27"/>
         </designable>
         <designable name="Ygf-th-KR3">
-            <size key="intrinsicContentSize" width="75" height="36"/>
+            <size key="intrinsicContentSize" width="62.666666666666664" height="28.666666666666668"/>
         </designable>
         <designable name="lEg-fw-QSA">
             <size key="intrinsicContentSize" width="66" height="28.666666666666668"/>
